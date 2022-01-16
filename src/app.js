@@ -9,6 +9,7 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //SETUP PATHS CONFIG FOR EXPRESS
 const publicDirectory = path.join(__dirname, '../Public-Directory')
@@ -117,6 +118,6 @@ app.get('*',(req,res)=>{
 // })
 
 
-app.listen(3000, ()=>{
-    console.log('Server is listening....')
+app.listen(port, ()=>{
+    console.log('Server is listening.... on ' + port)
 })

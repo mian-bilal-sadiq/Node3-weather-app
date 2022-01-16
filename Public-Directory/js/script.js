@@ -12,7 +12,7 @@ form.addEventListener('submit', (event)=>{
     event.preventDefault()
     const city = search.value;
 
-         fetch('http://localhost:3000/weather?location='+city).then(response => {
+         fetch('/weather?location='+city).then(response => {
              response.json().then(data => {
                  console.log(data)
                  let result =''
