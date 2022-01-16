@@ -1,6 +1,6 @@
 //REQUIRING LOCAL FILES
-const geocode = require('./utils/geocode')
-const weatherStack = require('./utils/weatherStack')
+const geocode = require('/utils/geocode')
+const weatherStack = require('/utils/weatherStack')
 
 //REQUIRING LOCAL MODULES
 const path = require('path')
